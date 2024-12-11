@@ -1,6 +1,6 @@
-# AI Ember
+# Ember
 
-AI Ember is an interactive AI-based application that integrates computer vision, natural language processing, and gesture recognition to enable dynamic interactions with a user. The application features emotion detection, gesture-based controls, and voice-command functionalities, creating an engaging and intuitive user experience.
+Ember is an interactive AI-based application that integrates computer vision, natural language processing, and gesture recognition to enable dynamic interactions with a user. The application features emotion detection, gesture-based controls, and voice-command functionalities, creating an engaging and intuitive user experience.
 
 ## Features
 
