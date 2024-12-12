@@ -10,7 +10,7 @@ import numpy as np
 import speech_recognition as sr
 from deepface import DeepFace
 import simple_colors
-from helper_functions import send_message, search_google, play_music_spotify, play_music_youtube, AI_modify, my_sentiment_analyzer, recommender_AI
+from helper_functions import send_message, search_google, play_music_spotify, play_music_youtube, AI_modify, my_sentiment_analyzer, recommender_AI, AI_create_msg
 
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
@@ -77,7 +77,10 @@ def recognize_speech():
 
             if "instagram" in text.lower() or "insta" in text.lower():
                 text = text.replace("Instagram", "").replace("message", "").strip()
-                text = AI_modify(text)
+                if "create" in text or "craft" in text:
+                    text = AI_create_msg(text)
+                else:
+                    text = AI_modify(text)
                 send_message(text)
 
             elif "google" in text.lower() or "search" in text.lower():

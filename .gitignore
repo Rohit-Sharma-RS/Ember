@@ -1,2 +1,7 @@
 helper_functions.py
 __pycache__
+recommender_system.h5
+prompter.h5
+text_modifier.h5
+.cache
+linked in post.txt
